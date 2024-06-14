@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #00b6ad; /* Light gray background color */
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.game-box {
+  background-color: #3498db; /* Blue background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #ffffff; /* White text color */
+  margin-bottom: 20px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff; /* Game interface background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  font-size: 2em;
+  cursor: pointer;
+  background-color: #f1f1f1; /* Cell background color */
+}
+
+.cell:hover {
+  background-color: #e0e0e0; /* Darker shade on hover */
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#turn {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#result {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #2ecc71; /* Green button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #27ae60; /* Darker shade on hover */
+}
+
+.player-names {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.player-name {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+}
